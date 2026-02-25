@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UuS My Bini</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HALAMAN 1 */
+.page1 {
+    height: 100vh;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box {
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: hotpink;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: deeppink;
+}
+
+/* HALAMAN 2 */
+.page2 {
+    display: none;
+    height: 100vh;
+    background: #fff0f5;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.photo {
+    width: 300px;
+    height: 400px;
+    margin: 30px auto;
+    background: #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+p {
+    font-size: 18px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HALAMAN 1 -->
+<div class="page1" id="halaman1">
+    <div class="box">
+        <h1>UuS My Bini ❤️</h1>
+        <button onclick="bukaPesan()">Pencet Pesan</button>
+    </div>
+</div>
+
+<!-- HALAMAN 2 -->
+<div class="page2" id="halaman2">
+    <h1>Buat Kamu 💕</h1>
+
+    <div class="photo">
+        <!-- GANTI FOTO.jpg DENGAN FOTO KAMU -->
+        <img src="FOTO.jpg" alt="Foto">
+    </div>
+
+    <p>
+        Website ini dibuat khusus untuk kamu.  
+        Semoga selalu bahagia 🤍
+    </p>
+</div>
+
+<script>
+function bukaPesan(){
+    document.getElementById("halaman1").style.display = "none";
+    document.getElementById("halaman2").style.display = "block";
+}
+</script>
+
+</body>
+</html>
